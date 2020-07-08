@@ -86,8 +86,9 @@
         } else {
           service.isNothing = true;
         }
-        //        if (returnItems.length === 0) {
-        //          service.isNothing = true;
+        if (returnItems.length === 0) {
+          service.isNothing = true;
+        }
         //        } else {
         //          console.log("entrou");
         //          service.isNothing = false;
