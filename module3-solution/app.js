@@ -89,10 +89,6 @@
         if (returnItems.length === 0) {
           service.isNothing = true;
         }
-        //        } else {
-        //          console.log("entrou");
-        //          service.isNothing = false;
-        //        }
 
         return returnItems;
       });
