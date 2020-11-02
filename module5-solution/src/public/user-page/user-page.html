@@ -1,0 +1,14 @@
+<div class="container">
+  <div ng-if="!userPageCtrl.signedIn">
+    Not Signed Up Yet. <a ui-sref="public.subscribe">Sign up Now!</a>
+  </div>
+  <div ng-if="userPageCtrl.signedIn">
+    <h2>
+      Hi, {{ userPageCtrl.user.firstName }} {{ userPageCtrl.user.lastName }}!
+    </h2>
+    <div>Phone: {{ userPageCtrl.user.phone }}</div>
+    <div>Email: {{userPageCtrl.user.email }}</div>
+    <div>Your favorite food:</div>
+    <menu-item menu-item="userPageCtrl.menuItem"></menu-item>
+  </div>
+</div>

@@ -1,0 +1,23 @@
+<div id="main-content" class="container">
+  <div id="signup-tiles" class="row">
+    <div class="col-md-4 col-sm-6 col-xs-12">
+      <div ng-controller="SignupController as controller">
+        <form name="signupForm">
+          <label>First Name: <input type="text" ng-model="firstname" /></label
+          ><br />
+          <label
+            >Last Name: <input type="text" ng-model="user.lastname" /></label
+          ><br />
+          <label>E-mail: <input type="email" ng-model="user.email" /></label
+          ><br />
+          <label>Phone: <input type="phone" ng-model="user.phone" /></label
+          ><br />
+          <label
+            >Favorite Dish:
+            <input type="text" ng-model="user.favorite" /></label
+          ><br />
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
